@@ -1,0 +1,159 @@
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* === HEADER === */
+header {
+  background: #111;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  float: left;
+  margin-right: 1em;
+}
+
+h1 {
+  margin-bottom: 0.3em;
+  font-size: 2em;
+}
+
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 0.5em;
+}
+
+.menu li a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #ff4500;
+}
+
+/* === HERO SECTION === */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text h2 {
+  font-size: 2.5em;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+}
+
+/* === MODELS === */
+.models {
+  padding: 2em;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 1em;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* === CONTACTE === */
+.contacte {
+  padding: 2em;
+  background: #eee;
+  text-align: center;
+}
+
+.contacte img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 1em;
+}
+
+/* === FOOTER === */
+footer {
+  background: #111;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  margin-top: 2em;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul.menu {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5em;
+  }
+}
